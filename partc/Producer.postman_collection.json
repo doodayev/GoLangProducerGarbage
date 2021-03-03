@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "36702534-3426-434a-acb2-169e159c5d1b",
+		"name": "Producer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Start",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/producer/start",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"producer",
+						"start"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Produce Task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"taskName\": \" TEST \",\r\n    \"taskType\": \"Producer\",\r\n    \"lastUpdateTime\": \"02/16/2021\",\r\n    \"scheduledTime\": \"02/17/2021\",\r\n    \"periodacity\": \"1\",\r\n    \"taskStatus\": \"pending\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/tasks/produce",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"tasks",
+						"produce"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

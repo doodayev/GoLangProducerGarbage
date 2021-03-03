@@ -1,0 +1,29 @@
+{
+	"info": {
+		"_postman_id": "fbc72f9e-0113-461a-9a22-bf38c100bd2e",
+		"name": "Consumer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Start",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/consumer/start",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"consumer",
+						"start"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
